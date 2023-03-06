@@ -1,0 +1,371 @@
+/* Estilos generales */
+body {
+
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0px; /* Elimina el padding predeterminado */
+  background-color: #EDEDED; /* Establece el color de fondo del documento */
+}
+
+
+header {
+font-family: 'Roboto', sans-serif;
+font-weight: 600;
+text-transform: uppercase;
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+   }
+
+
+
+.header-logo {
+  width: 80px; /* Establece el ancho de la imagen */
+  position: absolute; /* Posiciona la imagen en forma absoluta */
+   left: 20px; /* Establece un margen izquierdo de 20px */
+   top: 20px;
+  
+  }
+
+  .menu-container {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 10%;
+  height: 5vh;
+  overflow-y: visible;
+  
+}
+
+header nav a:hover {
+  background-color: #454545; /* Establece el color de fondo al hacer hover en los enlaces del menú */
+}
+
+
+.responsive-sketchfab {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Oculta el menú de hamburguesa por defecto */
+.menu-list {
+  display: none;
+}
+
+
+/* Clase para mostrar el menú de hamburguesa cuando se hace clic en el botón */
+.menu-list.display-block {
+  display: block;
+}
+
+
+/* Estilos para el menú de navegación */
+nav {
+  background-color: #333333; /* Establece el color de fondo del menú */
+  display: flex; /* Muestra los enlaces en línea */
+  justify-content: right; /* Centra los enlaces del menú */
+}
+
+header nav a {
+  font-size: 15px; /* Establece el tamaño de la fuente en 15px */
+}
+
+/* Estilos para los enlaces del menú */
+nav a {
+  color: #ffffff; /* Establece el color de los enlaces */
+  padding: 18px 10px; /* Añade un espacio de 14px arriba y abajo, y 16px a la izquierda y derecha de cada enlace */
+  text-decoration: none; /* Elimina la decoración de los enlaces */
+  margin: 5px; /* Añade un margen de 10px entre cada enlace */
+}
+
+
+/* Estilos para el efecto parallax en las secciones */
+section {
+  background-attachment: fixed; /* Fija la imagen de fondo en su posición */
+  background-position: center; /* Centra la imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para que cubra toda la sección */
+height: 100vh; /* Establece la altura de la sección en 100% de la altura de la pantalla */
+}
+
+
+
+/* Estilos para el footer */
+footer {
+  width: 100%; /* Establece el ancho del footer en 100% */
+  background-color: #333333; /* Establece el color de fondo del footer */
+  color: white; /* Establece el color del texto del footer */
+  font-size: 15px; /* Ajusta el tamaño del texto del footer */
+  padding: 5px; /* Ajusta el espaciado del footer */
+  text-align: center; /* Centra el texto del footer */
+  position: fixed; /* Posiciona el footer en forma fija */
+  bottom: 0px; /* Establece el footer al final de la página */
+  height: 10vh;
+ 
+  
+}
+
+
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.menu-visible {
+  display: flex; /* Muestra el menú como un elemento flex */
+  flex-wrap: wrap; /* Ajusta los elementos dentro del menú para que se ajusten a la pantalla */
+  justify-content: center; /* Centra los elementos dentro del menú */
+  align-items: center; /* Alinea los elementos dentro del menú al centro */
+  background-color: #454545; /* Establece el color de fondo del menú */
+  color: white; /* Establece el color del texto dentro del menú */
+  font-size: 2em; /* Aumenta el tamaño de la fuente dentro del menú */
+}
+
+.menu-icon {
+  display: none; /* Oculta el icono */
+  filter: invert(100%);
+  
+  }
+  
+  /* Clase para mostrar el icono en pantallas pequeñas */
+  @media (max-width: 600px) {
+  .menu-icon {
+  display: block; /* Muestra el icono */
+  }
+  
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+/* Estilos para el enlace de contacto del footer */
+footer a {
+  font-size: 20px; /* Ajusta el tamaño de los iconos */
+  color: white; /* Establece el color del enlace */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  transition: all 0.2s ease-in-out; /* Agrega un efecto de transición en 0.2 segundos a todas las propiedades del enlace */
+  text-transform: uppercase;
+  align-items: center;
+  margin-left: 10px; /*Aumenta el espacio a la izquierda del texto*/
+  margin-right: 10px; /*Aumenta el espacio a la izquierda del texto*/
+  
+}
+
+/* Estilos para el enlace de contacto del footer al pasar el cursor */
+footer a:hover {
+  color: #d8fa2c; /* Establece el color al pasar el cursor */
+  transform: scale(3); /* Aumenta el tamaño de los iconos en un 20% al hacer hover */
+  align-items: center;
+}
+
+
+@media (max-width: 600px) {
+  footer nav a {
+      font-size: 5px;
+  }
+}
+
+.texto-footer {
+  color: rgb(255, 255, 255); /* para cambiar el color de texto */
+  font-size: 12px; /* para cambiar el tamaño de letra */
+  font-weight: bold; /* para poner el texto en negrita */
+  text-align: center; /* para alinear el texto al centro */
+  text-transform: uppercase; /* para convertir el texto a mayúsculas */
+  letter-spacing: 1.5px; /* para aumentar el espacio entre las letras */
+  line-height: 1.2; /* para aumentar el espacio entre líneas */
+  margin-bottom: 2px; /* para aumentar el espacio debajo del texto */
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10px; /*Aumenta el espacio a la izquierda del texto*/
+  margin-right: 10px; /*Aumenta el espacio a la izquierda del texto*/
+}
+
+
+  /* Oculta los elementos de texto en pantallas pequeñas */
+  @media (max-width: 667px) {
+    nav a {
+      display: none;
+    }
+  }
+
+  @media (max-width: 667px) {
+    .menu-button {
+      display: block;
+    }
+        .logo-container {
+      display: none;
+    }
+  }
+  
+  
+.menu-button {
+  position: absolute;
+  top: 660px;
+  right: 15px;
+  }
+  
+/* Aumenta el tamaño del icono del menú hamburguesa */
+.menu-button i {
+  font-size: 35px;
+}
+
+/* Cambia el color del icono del menú hamburguesa */
+.menu-button i {
+  color: #151515;
+  
+}
+
+/* Aumenta el tamaño del botón del menú hamburguesa */
+.menu-button {
+  width: 60px;
+  height: 60px;
+}
+
+/* Agrega un borde redondeado al botón del menú hamburguesa */
+.menu-button {
+  border-radius: 80px;
+}
+
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  nav.visible {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+nav a i{
+  margin-right: 10px; /*Aumenta el espacio a la derecha del icono*/
+}
+nav a span{
+  margin-left: 10px; /*Aumenta el espacio a la izquierda del texto*/
+}
+
+nav{
+  padding: 10px; /*Aumenta el espacio entre cada enlace*/
+}
+
+/* Oculta el footer en pantallas pequeñas */
+@media (max-width: 768px) {
+  footer {
+    display: none;
+  }
+}
+
+
+ 
+ .dropdown-content.active {
+  background-color: #f7ff1b;
+ }
+ 
+ .dropdown-content a {
+  color: #f2f2f2;
+ }
+
+ .dropdown-content a {
+  font-size: 30px;
+   padding: 5px;
+  margin: 5px;
+  align-items: justify;
+ }
+
+ .dropdown-content i {
+  color: rgb(255, 255, 255);
+  margin: 5px;
+ }
+ 
+
+.dropdown-content {
+  background-color: rgba(0, 0, 0, 0.662);
+  box-shadow: 0px 2px 6px rgb(0, 0, 0);
+  display: none;
+  position: fixed; /* cambiamos la posición a fija */
+  right: 25;
+  top: 0;
+  bottom: 0; /* agregamos un borde inferior */
+  left: 25; /* agregamos un borde izquierdo */
+  width: 100%; /* hacemos que ocupe el ancho de pantalla completa */
+  z-index: 1;
+  padding: 10px;
+}
+
+.dropdown-content .dropdown-item {
+  display: block;
+  width: 100%; /* hacemos que ocupe el ancho de pantalla completa */
+  padding: 25px;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown-content .dropdown-item:hover {
+  background-color: #2d2d2d6c;
+}
+
+.menu-button {
+  z-index: 9999; /* Valor alto para que el botón se sitúe encima de todos los elementos */
+}
+
+@media (min-width: 667px) {
+  .dropdown-container {
+      display: none; /* Oculta el contenedor en pantallas mayores a 768px */
+      display: list-item;
+  }
+}
+
+
+@media (max-width: 667px) {
+  .dropdown-container {
+      display: block; /* Muestra el contenedor en pantallas menores a 768px */
+  }
+}
+
+.dropdown-content.active {
+  /* Estilos para mostrar el contenedor */
+  display: flex;
+  
+}
+
+.dropdown-content .social-icons {
+  display: flex;
+  align-items: flex-end; 
+  
+
+}
+
+.dropdown-textinfo
+{
+font-size: smaller;
+  color: #ffffff;
+ 
+}
