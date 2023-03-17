@@ -161,9 +161,13 @@ footer a:hover {
 }
 
 .menu-button {
+  width: 60px;
+  height: 60px;
   position: absolute;
   top: 660px;
   right: 15px;
+  border-radius: 80px;
+  z-index: 9999;
 }
 
 /* Aumenta el tamaño del icono del menú hamburguesa */
@@ -176,15 +180,6 @@ footer a:hover {
   color: #151515;
 
 }
-
-/* Aumenta el tamaño del botón del menú hamburguesa */
-.menu-button {
-  width: 60px;
-  height: 60px;
-}
-
-/* Agrega un borde redondeado al botón del menú hamburguesa */
-.menu-button {border-radius: 80px;}
 
 nav {
   display: flex;
@@ -242,8 +237,6 @@ nav {padding: 10px;}
 
 .dropdown-content .dropdown-item:hover {background-color: #2d2d2d6c;}
 
-.menu-button {z-index: 9999;}
-
 .dropdown-content.active {display: flex;}
 
 .dropdown-content .social-icons {
@@ -293,8 +286,6 @@ nav {padding: 10px;}
   nav {display: none;}
 
   nav.visible {display: flex;}
-
-  .menu-button { display: block;}
 }
 
 /*===========================END_MEDIAQUERYS==============================*/
