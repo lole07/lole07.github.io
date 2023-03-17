@@ -1,6 +1,6 @@
 function toggleDropdown() {
-    var dropdown = document.querySelector(".dropdown-content");
-    var menuButton = document.querySelector(".menu-button");
+    const dropdown = document.querySelector(".dropdown-content");
+    const menuButton = document.querySelector(".menu-button");
     if (dropdown.style.display === "block") {
         dropdown.style.display = "none";
         menuButton.classList.remove("active");
