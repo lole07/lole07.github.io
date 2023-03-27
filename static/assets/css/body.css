@@ -42,6 +42,11 @@ header {
 
 }
 
+.text-color{
+
+  color:aqua;
+}
+
 .menu-container {
   display: flex;
   align-items: center;
