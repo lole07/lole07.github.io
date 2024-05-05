@@ -1,0 +1,296 @@
+/*=============================ROOT================================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  max-width: 100%;
+  min-height: 100%;
+  font-size: 62.5%;
+}
+/*===========================END_ROOT==============================*/
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0px;
+  background-color: #EDEDED;
+}
+
+header {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  background-color: #333333;
+  justify-content: right;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-logo {
+  width: 80px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+
+}
+
+.text-color{
+
+  color:aqua;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 10%;
+  height: 5vh;
+  overflow-y: visible;
+}
+
+header nav a:hover {background-color: #454545;}
+
+.responsive-sketchfab {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Oculta el menú de hamburguesa por defecto */
+.menu-list {display: none;}
+
+/* Clase para mostrar el menú de hamburguesa cuando se hace clic en el botón */
+.menu-list.display-block {display: block;}
+
+/* Estilos para el menú de navegación */
+nav {
+  width: 50vw;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+header nav a {font-size: 15px;}
+
+/* Estilos para los enlaces del menú */
+nav a {
+  color: #ffffff;
+  padding: 18px 10px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* Estilos para el efecto parallax en las secciones */
+section {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Estilos para el footer */
+footer {
+  width: 100vw;
+  max-width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  background-color: #333333;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-visible {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #454545;
+  color: white;
+  font-size: 2em;
+}
+
+.menu-icon {
+  display: none;
+  filter: invert(100%);
+}
+
+.hidden {display: none;}
+
+/* Estilos para el enlace de contacto del footer */
+footer a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Estilos para el enlace de contacto del footer al pasar el cursor */
+footer a:hover {
+  color: #d8fa2c;
+  transform: scale(3);
+  align-items: center;
+}
+
+.texto-footer {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  margin-bottom: 2px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu-button {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 660px;
+  right: 15px;
+  border-radius: 80px;
+  z-index: 9999;
+}
+
+/* Aumenta el tamaño del icono del menú hamburguesa */
+.menu-button i {
+  font-size: 35px;
+}
+
+/* Cambia el color del icono del menú hamburguesa */
+.menu-button i {
+  color: #151515;
+
+}
+
+nav a i {margin-right: 10px;}
+
+nav a span {margin-left: 10px;}
+
+nav {padding: 10px;}
+
+.dropdown-content.active {
+  background-color: #f7ff1b;
+}
+
+.dropdown-content a {
+  color: #f2f2f2;
+}
+
+.dropdown-content a {
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+  align-items: justify;
+}
+
+.dropdown-content i {
+  color: rgb(255, 255, 255);
+  margin: 5px;
+}
+
+.dropdown-content {
+  background-color: rgba(0, 0, 0, 0.662);
+  box-shadow: 0px 2px 6px rgb(0, 0, 0);
+  display: none;
+  position: fixed;
+  right: 25;
+  top: 0;
+  bottom: 0;
+  left: 25;
+  width: 100%;
+  z-index: 1;
+  padding: 10px;
+}
+
+.dropdown-content .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 25px;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown-content .dropdown-item:hover {background-color: #2d2d2d6c;}
+
+.dropdown-content.active {display: flex;}
+
+.dropdown-content .social-icons {
+  display: flex;
+  align-items: flex-end;
+}
+
+.dropdown-textinfo {
+  font-size: smaller;
+  color: #ffffff;
+}
+
+/*=============================MEDIAQUERYS================================*/
+
+/* Clase para mostrar el icono en pantallas pequeñas */
+@media (max-width: 600px) {
+  .menu-icon {display: block;}
+
+  footer nav a {font-size: 5px;}
+}
+
+/* Oculta los elementos de texto en pantallas pequeñas */
+@media (min-width: 667px) {
+  .dropdown-container {
+    display: none;
+    display: list-item;
+  }
+}
+
+@media (max-width: 667px) {
+  nav a {display: none;}
+
+  .menu-button {display: block;}
+
+  .logo-container {display: none;}
+
+  .dropdown-container {display: block;}
+
+  footer {display: none;}
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-button { display: none;}
+}
+
+@media (max-width: 768px) {
+  nav {display: none;}
+
+  nav.visible {display: flex;}
+}
+
+/*===========================END_MEDIAQUERYS==============================*/
