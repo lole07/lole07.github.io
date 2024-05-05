@@ -71,7 +71,7 @@ header nav a:hover {background-color: #454545;}
 
 /* Estilos para el menú de navegación */
 nav {
-  width: 60vw;
+  width: 50vw;
   display: flex;
   justify-content: end;
   flex-wrap: wrap;
